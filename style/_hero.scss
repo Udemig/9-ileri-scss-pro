@@ -1,0 +1,52 @@
+#hero {
+  display: flex;
+  gap: 35px;
+  margin-top: 140px;
+  @include medium {
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 50px;
+    h1 {
+      font-size: 60px !important;
+    }
+  }
+  @include mobile {
+    margin-top: 50px;
+    h1 {
+      font-size: 40px !important;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .info {
+    h1 {
+      font-size: 80px;
+      font-weight: 700;
+    }
+    img {
+      margin: 30px 0 50px;
+    }
+    p {
+      max-width: 460px;
+      font-weight: 300;
+      line-height: 30px;
+      letter-spacing: 1px;
+    }
+    .buttons {
+      margin-top: 50px;
+      display: flex;
+      gap: 40px;
+      button {
+        padding: 20px 30px;
+        background: none;
+        border: none;
+        &:nth-child(1) {
+          background: $green;
+          border-radius: 40px;
+          color: white;
+        }
+      }
+    }
+  }
+}

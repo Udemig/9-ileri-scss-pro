@@ -1,0 +1,25 @@
+#brand-area {
+  margin-top: 130px;
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .brands {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 65px;
+      p {
+        color: #a6a6a6;
+        font-size: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+}

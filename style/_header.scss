@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    color: $green;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    @include mobile {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+  }
+  nav {
+    display: flex;
+    gap: 40px;
+    a {
+      text-decoration: none;
+      color: $black;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s;
+      &:hover {
+        border-bottom: 1px solid $green;
+      }
+    }
+  }
+  div {
+    button {
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover {
+        scale: 0.98;
+      }
+      &:nth-child(2) {
+        background: $green;
+        color: white;
+      }
+    }
+  }
+  .nav-btn {
+    display: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: $green;
+    color: white;
+    cursor: pointer;
+  }
+  @include laptop {
+    div,
+    nav {
+      display: none;
+    }
+    .nav-btn {
+      display: block;
+    }
+  }
+}
